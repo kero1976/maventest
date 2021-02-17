@@ -19,6 +19,8 @@ public class A1 {
 
 	public void bug() {
 		String str = null;
+		String str2;
 		System.out.println(str);
+		System.out.println(str.toString());
 	}
 }
