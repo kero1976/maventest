@@ -24,7 +24,35 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-
+   <plugin>
+            <!-- SpotBugs(旧名FindBugs) -->
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.1.4</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs</artifactId>
+                        <version>4.1.4</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <effort>Default</effort>
+                    <threshold>Default</threshold>
+                    <failOnError>true</failOnError>
+                    <trace>true</trace>
+                    <xmlOutput>true</xmlOutput>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>spotbugs</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
         </plugins>
     </build>

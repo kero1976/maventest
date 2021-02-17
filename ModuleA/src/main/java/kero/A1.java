@@ -15,4 +15,10 @@ public class A1 {
 		System.out.println("AA");
 		System.out.println("AA");
 	}
+
+
+	public void bug() {
+		String str = null;
+		System.out.println(str);
+	}
 }
