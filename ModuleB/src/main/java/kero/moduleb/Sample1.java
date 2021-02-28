@@ -8,7 +8,7 @@ public class Sample1 {
 		try {
 			System.out.println(str.toString());
 		}catch(Exception e) {
-
+kero.A1.hoge();
 		}
 
 	}

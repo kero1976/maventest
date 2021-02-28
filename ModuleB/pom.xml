@@ -6,4 +6,13 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>ModuleB</artifactId>
+
+     <dependencies>
+           <dependency>
+            <groupId>MavenTest</groupId>
+            <artifactId>ModuleA</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+   </dependencies>
+
 </project>
